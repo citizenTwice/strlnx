@@ -1,4 +1,4 @@
-# strlnx 
+# strlnx.h
 Ready-to-use strlncat &amp; strlncpy header lib with Unicode/wchar_t support.
 Feel free to use!
 
