@@ -1,5 +1,5 @@
 # strlnx 
-Ready-to-use strlncat &amp; strlncpy header lib with Unicode/wchar_t support
+Ready-to-use strlncat &amp; strlncpy header lib with Unicode/wchar_t support.
 Feel free to use!
 
 #### License
