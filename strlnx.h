@@ -67,10 +67,10 @@ Concatenates up to max_copy chars of src to dst, respecting the size limit of ds
  -> dst_size = size *in characters* of dst
  -> src      = pointer to source string
  -> max_copy = max number of characters to copy
- -> return value = srclen(dst) + min(srclen(s), max_copy)
+ -> return value = strlen(dst) + min(strlen(s), max_copy)
 */
 static size_t strlncat(strlnx_char_t *dst, const strlnx_char_t *src, size_t dst_size, size_t max_copy) {
- 
+
     size_t dst_len = strlnx_strlen(dst, dst_size);
     size_t src_len = strlnx_strlen(src, max_copy);
     size_t would_copy = (src_len < max_copy) ? src_len : max_copy;
@@ -98,7 +98,7 @@ Copies up to max_copy chars of src to dst, respecting the size limit of dst.
  -> dst_size = size *in characters* of dst
  -> src      = pointer to source string
  -> max_copy = max number of characters to copy
- -> return value = min(srclen(s), max_copy)
+ -> return value = min(strlen(s), max_copy)
 */
 static size_t strlncpy(strlnx_char_t *dst, const strlnx_char_t *src, size_t dst_size, size_t max_copy) {
   
